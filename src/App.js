@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState } from 'react';
+import { useState } from "react";
+
+import "./App.css";
+import logo from "./logo.svg";
 
 const App = () => {
   const [isShown, setIsShown] = useState(false)
@@ -17,7 +18,7 @@ const App = () => {
         </p>
 
         <button className="App-button" onClick={onClick}>
-          Show / Hide
+          {isShown ? "Hide" : "Show"}
         </button>
 
         {isShown && <img src={logo} className="App-logo" alt="logo" />}
