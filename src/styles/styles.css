@@ -16,7 +16,17 @@ body {
         "Helvetica Neue", sans-serif;
 }
 
-.container {
-    margin: auto;
-    max-width: 1000px;
+button {
+    border: 2px solid black;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    background-color: rebeccapurple;
+    border-radius: 0.75rem;
 }

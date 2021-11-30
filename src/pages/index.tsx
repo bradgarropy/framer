@@ -4,7 +4,7 @@ import {FC, useState} from "react"
 import styles from "styles/Box.module.css"
 
 const IndexPage: FC = () => {
-    const [isShown, setIsShown] = useState(false)
+    const [isShown, setIsShown] = useState(true)
 
     const onClick = () => {
         setIsShown(!isShown)
@@ -15,7 +15,7 @@ const IndexPage: FC = () => {
             <SEO title="next starter" />
 
             <button onClick={onClick}>{isShown ? "Hide" : "Show"}</button>
-            {isShown && <div className={styles.box}></div>}
+            {isShown && <div className="box"></div>}
         </Layout>
     )
 }
