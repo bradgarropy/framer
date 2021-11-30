@@ -1,7 +1,6 @@
 import SEO from "@bradgarropy/next-seo"
 import Layout from "components/Layout"
 import {FC, useState} from "react"
-import styles from "styles/Box.module.css"
 
 const IndexPage: FC = () => {
     const [isShown, setIsShown] = useState(true)
